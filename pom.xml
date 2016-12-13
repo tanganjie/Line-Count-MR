@@ -121,7 +121,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.youku.LogLineCount.App</mainClass>
+							<mainClass></mainClass>
 						</manifest>
 					</archive>
 				</configuration>

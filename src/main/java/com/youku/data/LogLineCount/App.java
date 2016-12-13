@@ -1,4 +1,4 @@
-package com.xiaoanhome.LogLineCount;
+package com.youku.data.LogLineCount;
 
 import java.io.IOException;
 
@@ -12,8 +12,8 @@ import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.TextOutputFormat;
 
-import com.xiaoanhome.LogLineCount.mapreduce.LogTextMap;
-import com.xiaoanhome.LogLineCount.mapreduce.LogTextReduce;
+import com.youku.data.LogLineCount.mapreduce.LogTextMap;
+import com.youku.data.LogLineCount.mapreduce.LogTextReduce;
 
 /**
  * Hello world!

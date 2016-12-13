@@ -1,4 +1,4 @@
-package com.xiaoanhome.LogLineCount;
+package com.youku.data.LogLineCount;
 
 import java.io.IOException;
 
@@ -11,8 +11,8 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import com.xiaoanhome.LogLineCount.mapreduce.NewLogTextMap;
-import com.xiaoanhome.LogLineCount.mapreduce.NewLogTextReduce;
+import com.youku.data.LogLineCount.mapreduce.NewLogTextMap;
+import com.youku.data.LogLineCount.mapreduce.NewLogTextReduce;
 
 /**
  * Hello world!
@@ -24,6 +24,7 @@ public class NewApp
     {
     	//JobConf job = new JobConf(NewApp.class);
     	Job job = Job.getInstance();
+    	job.getConfiguration().set("textinputformat.record.delimiter", "\n");
     	job.setJobName("LogLineCount");
     	
     	job.setJarByClass(NewApp.class);

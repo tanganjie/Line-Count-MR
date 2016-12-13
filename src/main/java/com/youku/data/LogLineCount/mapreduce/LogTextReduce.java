@@ -1,4 +1,4 @@
-package com.xiaoanhome.LogLineCount.mapreduce;
+package com.youku.data.LogLineCount.mapreduce;
 
 import java.io.IOException;
 import java.util.Iterator;
